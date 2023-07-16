@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="smoke">
+	<test name="LoginTest">
+		<parameter name="UserName" value="demo@techfios.com" />
+		<parameter name="password" value="abc123" />
+		<parameter name="dashboardHeaderText" value="Dashboard" />
+
+		<classes>
+			<class name="test.LoginTest"></class>
+
+		</classes>
+	</test>
+</suite>

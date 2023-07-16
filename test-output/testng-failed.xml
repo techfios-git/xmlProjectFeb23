@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [regression]">
+  <parameter name="Zip" value="75009"/>
+  <parameter name="UserName" value="demo@techfios.com"/>
+  <parameter name="Email" value="msexcellll@gmail.com"/>
+  <parameter name="Address" value="Techfios Building"/>
+  <parameter name="City" value="Carrolton"/>
+  <parameter name="CompanyName" value="Techfios"/>
+  <parameter name="password" value="abc123"/>
+  <parameter name="Phone" value="231546"/>
+  <parameter name="State" value="TX"/>
+  <parameter name="FullName" value="Excel Projet"/>
+  <parameter name="dashboardHeaderText" value="Dashboard"/>
+  <parameter name="addContactHeaderText" value="Add Contact"/>
+  <parameter name="Country" value="United Kingdom"/>
+  <test name="crmTest(failed)">
+    <parameter name="Zip" value="75009"/>
+    <parameter name="UserName" value="demo@techfios.com"/>
+    <parameter name="Email" value="msexcellll@gmail.com"/>
+    <parameter name="Address" value="Techfios Building"/>
+    <parameter name="City" value="Carrolton"/>
+    <parameter name="CompanyName" value="Techfios"/>
+    <parameter name="password" value="abc123"/>
+    <parameter name="Phone" value="231546"/>
+    <parameter name="State" value="TX"/>
+    <parameter name="FullName" value="Excel Projet"/>
+    <parameter name="dashboardHeaderText" value="Dashboard"/>
+    <parameter name="addContactHeaderText" value="Add Contact"/>
+    <parameter name="Country" value="United Kingdom"/>
+    <classes>
+      <class name="test.AddCustomerTest">
+        <methods>
+          <include name="userShouldBeAbleToAddCustomer" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- test.AddCustomerTest -->
+      <class name="test.LoginTest">
+        <methods>
+          <include name="validUserShouldBeAbleToLogin" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- test.LoginTest -->
+      <class name="test.ListCustomerTest">
+        <methods>
+          <include name="userShouldBeAbleToAddCustomerFromListCustmer" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- test.ListCustomerTest -->
+    </classes>
+  </test> <!-- crmTest(failed) -->
+</suite> <!-- Failed suite [regression] -->
